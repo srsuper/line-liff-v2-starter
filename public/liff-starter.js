@@ -79,6 +79,7 @@ function initializeApp() {
 */
 function displayLiffData() {
     document.getElementById('browserLanguage').textContent = liff.getLanguage();
+    document.getElementById('displayNameField').textContent = liff.profile.displayName();
     document.getElementById('sdkVersion').textContent = liff.getVersion();
     document.getElementById('lineVersion').textContent = liff.getLineVersion();
     document.getElementById('isInClient').textContent = liff.isInClient();
